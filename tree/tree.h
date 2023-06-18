@@ -286,9 +286,13 @@ public:
 		return out;
 	}
 
-	tree<T>* merge(tree<T>* first, tree<T>* second)
+	tree<T>* merge(tree<T>* second)
 	{
 		ArraySequence<T>* first_arr, * second_arr;
+
+		first_arr = this->KLP();
+		second_arr = second->KLP();
+
 		tree<T>* out = new tree<T>(first_arr->GetFirst());
 		for (size_t i = 1; i < first_arr->GetLenght(); i++)
 		{

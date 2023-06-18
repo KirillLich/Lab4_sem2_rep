@@ -1,6 +1,8 @@
 #include <iostream>
 #include "tree/tree.h"
 #include "old_structs/MyStack.h"
+#include "test.h"
+#include "UI/UI.h"
 
 int f(int a)
 {
@@ -9,7 +11,7 @@ int f(int a)
 
 int main()
 {
-		tree<int> first(10);
+		/*tree<int> first(10);
 		first.insert(5);
 		first.insert(15);
 		first.insert(3);
@@ -27,5 +29,8 @@ int main()
 			std::cout << arr->Get(i) << " ";
 		}
 		delete second;
-		delete arr;
+		delete arr;*/
+	tree_tester t;
+	t.test_with_assert();
+	UserInterface interf;
 }

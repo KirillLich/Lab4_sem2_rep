@@ -140,14 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="tree\Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="based_structs\DynamicArray.h" />
     <ClInclude Include="based_structs\LinkedList.h" />
     <ClInclude Include="based_structs\Sequence.h" />
     <ClInclude Include="old_structs\MyStack.h" />
+    <ClInclude Include="test.h" />
     <ClInclude Include="tree\tree.h" />
+    <ClInclude Include="UI\UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
